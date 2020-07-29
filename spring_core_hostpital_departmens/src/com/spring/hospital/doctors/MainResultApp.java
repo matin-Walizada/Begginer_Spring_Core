@@ -22,6 +22,7 @@ public class MainResultApp {
 		
 		System.out.println(theDental.checkfirstThePatients());
 		System.out.println(theDental.priscribeRightMedicen());
+		System.out.println(theDental);
 		
 		
 		System.out.println("=========================\n");
@@ -29,7 +30,11 @@ public class MainResultApp {
 		
 		System.out.println(thepeiatrics.checkfirstThePatients());
 		System.out.println(thepeiatrics.priscribeRightMedicen());
+		System.out.println(thepeiatrics);
 		
+		 PediatricsDoctor theDoctor = context.getBean("Pd",PediatricsDoctor.class);
+		 
+		 System.out.println(" this is Pd DOC SPECIALITIS "+ theDoctor.getDoctorInfo());
 		 
 	}
 
