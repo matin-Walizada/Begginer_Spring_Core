@@ -1,5 +1,8 @@
 package com.spring.hospital.doctors;
 
+import com.spring.hospital.doctors.patientsInfo.DoctorsInfo;
+import com.spring.hospital.doctors.patientsInfo.PatientsInfo;
+
 public class PediatricsDoctor extends PatientsInfo implements DoctorsInstructionBook {
 
 			//dependency injection

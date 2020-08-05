@@ -1,12 +1,12 @@
-package com.spring.hospital.doctors;
+package com.spring.hospital.doctors.patientsInfo;
 
 public class PatientsInfo {
 
-	int patientId;
-	String firstName;
-	String lastName;
-	int age;
-	String address;
+	protected int patientId;
+	protected String firstName;
+	protected String lastName;
+	protected int age;
+	protected String address;
 	
 	
 	public PatientsInfo(int patientId, String firstName, String lastName, int age, String address) {

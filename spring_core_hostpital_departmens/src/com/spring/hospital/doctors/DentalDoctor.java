@@ -2,6 +2,9 @@ package com.spring.hospital.doctors;
 
 import org.springframework.context.annotation.Bean;
 
+import com.spring.hospital.doctors.patientsInfo.DoctorsInfo;
+import com.spring.hospital.doctors.patientsInfo.PatientsInfo;
+
 public class DentalDoctor extends PatientsInfo  implements DoctorsInstructionBook {
 	 
  // Dependency Injection

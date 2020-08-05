@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:context="http://www.springframework.org/schema/context"
@@ -20,6 +18,7 @@
 	<bean id="dental" class="com.spring.hospital.doctors.DentalDoctor">
 		 
 		 <property name="doctorsInfo" ref="docInfo"/>
+		 
 		 <constructor-arg value="2" type="int"  />
 		  <constructor-arg value="Kamal"   />
 		   <constructor-arg value="ahmadi"  />
@@ -28,7 +27,7 @@
 	 	
 	 </bean >
 
-	 <bean id="docInfo"  class="com.spring.hospital.doctors.DoctorsInfo">
+	 <bean id="docInfo"  class="com.spring.hospital.doctors.patientsInfo.DoctorsInfo">
 	 <property name="Id"  value="30"/>
 	  <property name="firstName"  value="Saboor"/>
 	  <property name="lastName"  value="jamshid"/>
@@ -59,7 +58,7 @@
  	
 	
 
-	 <bean id="docInformatinos"  class="com.spring.hospital.doctors.DoctorsInfo">
+	 <bean id="docInformatinos"  class="com.spring.hospital.doctors.patientsInfo.DoctorsInfo">
 	 <property name="Id"  value="45"/>
 	  <property name="firstName"  value="khan"/>
 	  <property name="lastName"  value="ahmad"/>

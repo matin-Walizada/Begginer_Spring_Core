@@ -1,4 +1,4 @@
-package com.spring.hospital.doctors;
+package com.spring.hospital.doctors.patientsInfo;
 
 public class DoctorsInfo {
 
