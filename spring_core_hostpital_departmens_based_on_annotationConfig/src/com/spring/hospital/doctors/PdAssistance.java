@@ -11,10 +11,5 @@ public class PdAssistance implements AssistanceDoctorsInstructionBook {
 		return "I am pd ASSISTANCE I help with the patients when the doctor is not present";
 	}
 
-	@Override
-	public void checkEachPatienBeforDoctoComes() {
-		// TODO Auto-generated method stub
-
-	}
-
+ 
 }

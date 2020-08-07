@@ -13,10 +13,5 @@ public class DentalAssistance implements AssistanceDoctorsInstructionBook {
 
 	}
 
-	@Override
-	public void checkEachPatienBeforDoctoComes() {
-	 
-		System.out.println("the assistance doctor check the patients rigth befor the doctors comes");
-	}
-
+ 
 }
