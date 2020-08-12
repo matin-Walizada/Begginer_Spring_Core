@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean id="Vission"
+		class="com.spring.hospital.doctors.VissionDoctor">
+
+	 	
+
+	</bean>
+
+
+	<bean id="dental" class="com.spring.hospital.doctors.DentalDoctor">
+		 
+		 <property name="doctorsInfo" ref="docInfo"/>
+		 
+		 <constructor-arg value="2" type="int"  />
+		  <constructor-arg value="Kamal"   />
+		   <constructor-arg value="ahmadi"  />
+		    <constructor-arg value="25" type="int"  />
+		     <constructor-arg value="54 Walstreet Menhantan New york apt 3, 12600"   />
+	 	
+	 </bean >
+
+	 <bean id="docInfo"  class="com.spring.hospital.doctors.patientsInfo.DoctorsInfo">
+	 <property name="Id"  value="30"/>
+	  <property name="firstName"  value="Saboor"/>
+	  <property name="lastName"  value="jamshid"/>
+	   <property name="specilaities"  value="Dental and Rootcanal"/>
+	    <property name="contact"  value="34234"/>
+	 	
+	 </bean> 
+
+
+
+
+
+
+
+	<bean id="Pd" class="com.spring.hospital.doctors.PediatricsDoctor">
+
+	 <property name="doctorsInfo" ref="docInformatinos"/>
+	 
+		 <constructor-arg value="10" type="int"  />
+		  <constructor-arg value="fahima"   />
+		   <constructor-arg value="karimi"  />
+		    <constructor-arg value="4" type="int"  />
+		     <constructor-arg value="34 mark st VA "   />
+
+	</bean>
+
+
+ 	
+	
+
+	 <bean id="docInformatinos"  class="com.spring.hospital.doctors.patientsInfo.DoctorsInfo">
+	 <property name="Id"  value="45"/>
+	  <property name="firstName"  value="khan"/>
+	  <property name="lastName"  value="ahmad"/>
+	   <property name="specilaities"  value="PEDIATRICS"/>
+	    <property name="contact"  value="4564"/>
+	 	
+	 </bean> 
+
+
+
+
+
+	<!-- bean or container -->
+
+	<!-- all the objects of the classes are created by spring here -->
+
+
+
+
+
+
+
+
+
+
+
+
+</beans>
