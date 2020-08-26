@@ -13,13 +13,17 @@
         http://www.springframework.org/schema/context/spring-context.xsd">
 
 
-
+	<!-- this part is for annotations -->
 	<mvc:annotation-driven />
-	 
+	
+	<!-- this is part for images in our project -->
+	
 	<mvc:resources location="/img/" mapping="/img/**"></mvc:resources>
-	<context:component-scan base-package="com.spring.mvc" />
+	
+	<!-- this part is for contacting with controllers -->
+	<context:component-scan base-package="com.spring.mvc.products" />
 
-
+<!-- 	this part is for viewing data -->
 	<bean id="viewResolver"
 		class="org.springframework.web.servlet.view.UrlBasedViewResolver">
 		<property name="viewClass"
